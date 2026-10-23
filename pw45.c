@@ -1,10 +1,8 @@
 #include <stdio.h>
-
-// Берем double, а не float: он точнее, и scanf с %lf читает как раз double
+// Берем double, а не float потому что он точнее, и scanf с %lf читает как раз double
 double mv_to_v(double mv){
     const double COF = 1000;
-    return mv / COF;
-}
+    return mv / COF;}
 int main(void){
     double a;
     printf("Введи милливольты: ");
@@ -14,7 +12,6 @@ int main(void){
     // буква так и осталась бы во вводе
     while (scanf("%lf", &a)==1){
         printf("%.2f мВ = %.2f В\n", a, mv_to_v(a));
-        printf("Введи милливольты: ");
-    }
+        printf("Введи милливольты: ");}
     return 0;
 }
