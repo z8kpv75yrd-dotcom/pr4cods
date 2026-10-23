@@ -1,7 +1,5 @@
 #include <stdio.h>
-
 #define KOF 7 // в неделе 7 дней
-
 int main(void){
     int a, b, c;
     printf("Введи кол-во дней: ");
@@ -12,7 +10,6 @@ int main(void){
         b = a / KOF;
         c = a % KOF;
         printf("%d нед %d дн\n", b, c);
-        printf("Введи кол-во дней: ");
-    }
+        printf("Введи кол-во дней: ");}
     return 0;
 }
